@@ -6,9 +6,6 @@ A remake of the original *Rise in Danger* with improved gameplay and the finishe
 
 [![Play Original Game](https://img.shields.io/badge/Play-Original-blue?style=for-the-badge)](https://scratch.mit.edu/projects/1131856943/)
 
-## Setup
-Update Soon
-
 ## Status
 
 In development
