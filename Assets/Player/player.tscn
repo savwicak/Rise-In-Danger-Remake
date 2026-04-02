@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://bwb111k6i0p5y"]
+
+[ext_resource type="Texture2D" uid="uid://cuv42wi7t6l7k" path="res://Assets/Player/Back.svg" id="1_5jfoa"]
+[ext_resource type="Texture2D" uid="uid://e7a46vx1ks54" path="res://Assets/Player/Front.svg" id="2_5j20w"]
+[ext_resource type="Texture2D" uid="uid://bhjloq672cbt1" path="res://Assets/Player/Walk1.svg" id="3_aqk3a"]
+[ext_resource type="Texture2D" uid="uid://12ly8k4ldvb3" path="res://Assets/Player/Walk2.svg" id="4_rul8u"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_kg0wl"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_5jfoa")
+}],
+"loop": true,
+"name": &"Idle Back",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_5j20w")
+}],
+"loop": true,
+"name": &"Idle Front",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_aqk3a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_rul8u")
+}],
+"loop": true,
+"name": &"Walking",
+"speed": 5.0
+}]
+
+[node name="Player" type="Node2D" unique_id=1538843612]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1696402631]
+sprite_frames = SubResource("SpriteFrames_kg0wl")
+animation = &"Idle Front"
